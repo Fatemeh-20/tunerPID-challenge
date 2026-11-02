@@ -78,10 +78,13 @@ GitHub Actions (`.github/workflows/ci.yml`) runs the backend tests, the frontend
 
 ## Future work
 
-- Use ITAE as the auto-tune objective, or a genetic algorithm as the search.
-- Seed the search with Ziegler–Nichols gains for plants that have a finite ultimate gain or an S-shaped step response
-  (none of the three bundled examples do, so it is not used today).
-- Run uploaded code in a separate process with a timeout and resource limits.
+- Advanced optimization algorithms: Introduce methods such as Genetic Algorithms (GA) or Particle Swarm   Optimization (PSO) and compare their performance with the existing random search and pattern search approach.
+
+- Additional tuning objectives: Allow users to select different performance criteria, such as IAE, ISE, and ITAE, instead of   relying on a fixed weighted objective.
+
+- Robustness analysis: Evaluate controller performance under external disturbances, measurement noise, and variations   in system parameters.
+
+- Execution isolation: Run uploaded dynamics files in separate processes with execution timeouts and resource limits to   improve security and reliability.
 
 ## Project layout
 
