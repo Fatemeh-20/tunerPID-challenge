@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  --color-bench: #0e141b;
+  --color-panel: #151d27;
+  --color-ink: #d9e2ec;
+  --color-trace: #4fb3d9;
+  --color-drive: #e0a33e;
+  --color-good: #4caf7d;
+  --color-bad: #e5604d;
+}
+
+body { @apply bg-bench font-sans text-ink antialiased; }
+:focus-visible { outline: 2px solid var(--color-trace); outline-offset: 2px; }
+input[type="text"] { color-scheme: dark; }
